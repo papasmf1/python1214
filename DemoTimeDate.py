@@ -68,7 +68,7 @@ print( lotto )
 
 #파일 리스트 
 import glob 
-result = glob.glob("c:\\work\\*.py")
+result = glob.glob("c:\\work\\*.*")
 #print(result)
 for item in result:
     print( basename(item) )
