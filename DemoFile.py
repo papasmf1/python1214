@@ -31,3 +31,24 @@ f.write("첫번째\n두번째\n세번째\n")
 #버퍼를 비우고 작업 종료
 f.close()
 
+#파일을 읽기(read text)
+#r기호(raw string notation)
+f = open("c:/work/demo.txt", "rt", encoding="utf-8")
+#하나의 문자열 변수로 받기
+result = f.read()
+print(result)
+
+#파일위치를 검색
+print( f.tell() )
+f.seek(0)
+
+#한줄씩 처리
+print( f.readline(), end="" )
+print( f.readline(), end="" )
+
+#전체를 리스트로 받기
+f.seek(0)
+lst = f.readlines()
+print( lst )
+
+f.close()
