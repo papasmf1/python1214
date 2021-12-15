@@ -12,7 +12,7 @@ g=open('c:\\work\\PV3_copy.txt','wt',encoding='utf-8')
 line = f.readline()
 #EOF를 찾기 
 while (line != ''):
-    if (re.search("\d{4}", line)):
+    if (re.search("error", line)):
         g.write(line + "\n")
     line = f.readline()
 
