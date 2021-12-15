@@ -36,5 +36,41 @@ print(r"c:\work\newfile.txt")
 
 from os.path import * 
 
-print( dir() )
+#print( dir() )
+
+print( abspath("python.exe") )
+print( basename("c:\\python38\\python.exe") )
+print( getsize("c:\\python38\\python.exe") )
+print( exists("c:\\python38\\python.exe") )
+
+#운영체제 관련 정보 
+from os import * 
+
+print("운영체제이름:", name )
+#system("notepad.exe")
+
+#임의의 정수, 실수 생성
+import random
+
+print( random.random() )
+print( random.random() )
+
+#임의의 정수를 생성 
+print( [random.sample(range(20), 10)] )
+print( [random.sample(range(20), 10)] )
+print( [random.sample(range(20), 10)] )
+
+#로또 번호 생성기
+lotto = list(range(1,46))
+print( lotto )
+random.shuffle(lotto)
+print( lotto )
+
+#파일 리스트 
+import glob 
+result = glob.glob("c:\\work\\*.py")
+#print(result)
+for item in result:
+    print( basename(item) )
+
 
