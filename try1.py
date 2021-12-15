@@ -3,14 +3,14 @@
 def divide(a,b):
     return a/b 
 
-#에러 처리 
+#에러 처리(화면단에서 처리) 
 try:
     #함수 호출
-    result = divide(5,0)
+    result = divide(5,2)
 except ZeroDivisionError:
     print("0으로 나누면 안됩니다.")
 except TypeError:
-    print("0으로 나누면 안됩니다.")
+    print("숫자여야 합니다.~~ ")
 else:
     print("결과:{0}".format(result))
 finally:
