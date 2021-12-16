@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 #동적으로 페이지 번호 생성
 #수열을 생성하는 함수: range(1,6)
-#파일에 저장 
+#파일에 저장(Write Text) 
 f = open("c:\\work\\webtoon.txt", "wt", encoding="utf-8")
 for i in range(1,6):
     url = "https://comic.naver.com/webtoon/list?titleId=20853&weekday=fri&page=" + str(i)
