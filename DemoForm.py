@@ -15,7 +15,7 @@ class DemoForm(QDialog, form_class):
         self.setupUi(self)
         self.label.setText("첫번째 Qt화면")
 
-#진입점을 체크해서 실행
+#진입점을 체크해서 실행:C언어에서 진입점(main함수)
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     demoWindow = DemoForm()
