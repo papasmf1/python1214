@@ -27,8 +27,13 @@ soup = BeautifulSoup(page, "html.parser")
 #print( soup.find_all("p", id="first") )
 
 #내부에 컨텐츠만 가져오기
+result = soup.find_all("p")
+print("갯수:{0}".format( len(result) ))
+
 for item in soup.find_all("p"):
-    content = item.text
+    #태그 내부에 문자열만 리턴 
+    content = item.text.strip()
+    content = content.replace("\n", "")
     print(content)
 
 
